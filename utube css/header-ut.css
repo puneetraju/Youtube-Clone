@@ -1,0 +1,176 @@
+
+.header{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+background-color: white;
+
+border-bottom: 1px solid rgb(218,218,218);
+
+z-index: 100;
+}
+.left-sec{
+  
+    display: flex;
+    align-items: center;
+}
+.hamburger-menu{
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+
+    }
+    .youtube-logo{
+    height: 20px;
+    }
+.middle-sec{
+ 
+    flex:1;
+    margin-left: 60px;
+    margin-right: 35px;
+    max-width: 475px;
+    display: flex;
+    align-items: center;
+}
+.searchbutton-icon{
+    height: 39px;
+    width: 65px;
+    margin-right: 10px;
+    background-color: rgba(232, 232, 232, 0.66);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    margin-left: -1px;
+    border-color: rgb(169, 168, 168);
+}
+.voicesearch-icon{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border-style: none;
+background-color: rgb(241, 241, 241);
+}
+.searchbox{
+    flex:1;
+     height: 36px; 
+     outline: none;
+     font-size: 16px;
+     padding-left: 10px;
+     /* border-width: 1px; same**
+     border-style: solid;
+     border-color: rgb(169, 168, 168); */
+     border: 1px solid rgb(169, 168, 168);
+     box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+     border-radius: 2px;
+     width: 0;
+  }
+  .searchbox::placeholder
+  {
+    font-size: 16px;
+  }
+
+  
+  .search-logo
+  {
+   width: 26px;
+  }
+  .voice-search-logo
+  {
+   width:26px;
+
+  }
+.right-sec{
+   
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+.upload-logo{
+height: 24px;
+}
+.ut-apps-logo{
+    height: 24px;
+}
+.notifications-logo{
+    height: 24px;
+}
+.user-profile-logo{
+    height: 32px;
+    border-radius: 50%;
+    width:30px;
+}
+.notification-div{
+position: relative;
+}
+.notifications-count{
+position: absolute;
+right: -3px;
+top:-2px;
+background-color: rgb(177, 0, 0);
+color: white;
+border-radius: 50%;
+font-size: 10px;
+
+padding-left: 5px;
+padding-right: 5px;
+padding-top: 2px;
+padding-bottom: 2px;
+
+
+}
+.searchbutton-icon,
+.voicesearch-icon,
+.upload-div,
+.youtubeapps-div,
+.notification-div
+
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+   
+}
+.searchbutton-icon .tooltip,
+.voicesearch-icon .tooltip,
+.upload-div .tooltip,
+.youtubeapps-div .tooltip,
+.notification-div .tooltip
+{
+
+    position: absolute;
+    background-color: rgb(134, 134, 134);
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px ;
+    font-size: 12px;
+    font-family: Roboto ,arial;
+    border-radius: 2px;
+    bottom: -40px;
+    opacity: 0;
+    transition: opacity 0.15s;
+ pointer-events: none;/* makes actual tooltip unresponsive to pointer */
+ white-space: nowrap; /* makes data in line not covering data */
+}
+.searchbutton-icon:hover .tooltip,
+.voicesearch-icon:hover .tooltip,
+.upload-div:hover .tooltip,
+.youtubeapps-div:hover .tooltip,
+.notification-div:hover .tooltip
+
+{
+    opacity: 1;
+}
